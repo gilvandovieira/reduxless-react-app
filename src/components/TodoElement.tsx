@@ -18,6 +18,6 @@ export const TodoElement: React.FC<Props> = ({ todo }) => {
 
     return (<>
         <h1>{todo.title}</h1>
-        <p>{todo.isCompleted ? "Completed" : "Incompleted"} <button onClick={onChangeStateClicked} name="ChangeState" title="Change State"/></p>
+        <p>{todo.isCompleted ? "Completed" : "Incomplete"} <button onClick={onChangeStateClicked} name="ChangeState" title="Change State"/></p>
     </>)
 }
