@@ -12,12 +12,13 @@ interface Props {
 export const TodoElement: React.FC<Props> = ({ todo }) => {
     const dispatch = useContext(P)
 
-    const onChangeStateClicked = (event: React.MouseEvent) => {
+    const onChangeStateClicked = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        event.preventDefault()
         dispatch(changeState(todo))
     }
 
     return (<>
         <h1>{todo.title}</h1>
-        <p>{todo.isCompleted ? "Completed" : "Incomplete"} <button onClick={onChangeStateClicked} name="ChangeState" title="Change State"/></p>
+        <p>{todo.isCompleted ? "Completed" : "Incomplete"} <button onClick={onChangeStateClicked} name="ChangeState" title="Change State" /></p>
     </>)
 }

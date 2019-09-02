@@ -13,7 +13,7 @@ export const AddTodo: React.FC = () => {
     }
 
     const onAddTodoClicked = (event: React.MouseEvent) => {
-        
+        event.preventDefault()
         dispatch(addTodo(todo))
     }
     return (<>
