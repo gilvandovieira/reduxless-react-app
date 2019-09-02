@@ -71,7 +71,7 @@ typings/
 
 # production
 /build
-
+/javascript/build
 # misc
 .DS_Store
 .env.local
