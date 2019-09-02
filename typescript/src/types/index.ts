@@ -1,8 +1,6 @@
 
 export const ADD_TODO = 'ADD_TODO'
 
-export const REMOVE_TODO = 'REMOVE_TODO'
-
 export const CHANGE_STATE = 'CHANGE_STATE'
 
 export interface Todo {
