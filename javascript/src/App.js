@@ -1,5 +1,5 @@
-import React, { useReducer }from 'react';
-import { TodoReducer} from './reducer'
+import React, { useReducer } from 'react';
+import { TodoReducer } from './reducer'
 import { AddTodo, TodoList } from './components';
 
 export const P = React.createContext(null)

@@ -9,7 +9,7 @@ export const Todo = ({ todo, index }) => {
         dispatch(changeTodoState(index))
     }
     return (<div>
-        <p>{todo.title} is {todo.isCompleted? 'completed': 'incomplete'}<button name="changeState" onClick={onButtonClicked}>Change State</button></p>
+        <p>{todo.title} is {todo.isCompleted? 'completed': 'incomplete'} <button name="changeState" onClick={onButtonClicked}>Change State</button></p>
     </div>)
 }
 
